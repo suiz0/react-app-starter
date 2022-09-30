@@ -5,6 +5,7 @@ module.exports = {
   output: {
     filename: "app-[contenthash].js",
     path: path.resolve(__dirname, "build"),
+    clean: true,
   },
   module: {
     rules: [
@@ -18,6 +19,9 @@ module.exports = {
         use: ["css-loader"],
       },
     ],
+  },
+  devServer: {
+    open: true,
   },
   resolve: {
     extensions: [".js", ".ts", ".tsx", ".jsx"],
