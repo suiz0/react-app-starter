@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:dev": "webpack --config webpack.config.dev.js",
+    "build": "npm run build:prod",
     "build:prod": "webpack --config webpack.config.prod.js",
     "start": "webpack-dev-server --config webpack.config.dev.js"
   },
