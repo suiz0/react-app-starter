@@ -20,7 +20,7 @@ const config = {
       filename: "[name]-[contenthash].css",
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve("public", "index.ejs"),
+      template: path.resolve("src", "index.ejs"),
     }),
   ],
 };

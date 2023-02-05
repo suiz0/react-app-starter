@@ -15,7 +15,7 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve("public", "index.ejs"),
+      template: path.resolve("src", "index.ejs"),
     }),
   ],
 };
