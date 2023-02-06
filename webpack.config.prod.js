@@ -32,4 +32,5 @@ module.exports = mergeWithRules({
       use: "prepend",
     },
   },
+  plugins: "append",
 })(baseConfig, config);
