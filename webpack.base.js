@@ -6,10 +6,13 @@ module.exports = {
   output: {
     filename: "app-[contenthash].js",
     path: path.resolve(__dirname, "build"),
-    clean: true,
   },
   module: {
     rules: [
+      {
+        test: /\.(jpg|png)/,
+        type: 'asset'
+      },
       {
         test: /\.(j|t)sx?$/,
         exclude: /node_modules/,
