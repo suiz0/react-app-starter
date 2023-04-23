@@ -8,7 +8,7 @@ module.exports = {
   ],
   plugins: ['react', '@typescript-eslint'],
   rules: {
-    indent: ['error', 2]
+    indent: 'off'
   },
   settings: {
     react: {
