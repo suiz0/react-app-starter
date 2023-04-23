@@ -1,11 +1,11 @@
-const path = require("path");
-const ESLintPlugin = require("eslint-webpack-plugin");
+const path = require('path');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: './src/index.tsx',
   output: {
-    filename: "app-[contenthash].js",
-    path: path.resolve(__dirname, "build"),
+    filename: 'app-[contenthash].js',
+    path: path.resolve(__dirname, 'build')
   },
   module: {
     rules: [
@@ -16,24 +16,24 @@ module.exports = {
       {
         test: /\.(j|t)sx?$/,
         exclude: /node_modules/,
-        use: "babel-loader",
+        use: 'babel-loader'
       },
       {
         test: /\.css$/,
-        use: ["css-loader"],
-      },
-    ],
+        use: ['css-loader']
+      }
+    ]
   },
   plugins: [
     new ESLintPlugin({
-      context: path.resolve(__dirname, "src"),
-      extensions: ["js", "ts", "tsx"]
-    }),
+      context: path.resolve(__dirname, 'src'),
+      extensions: ['js', 'ts', 'tsx']
+    })
   ],
   devServer: {
-    open: true,
+    open: true
   },
   resolve: {
-    extensions: [".js", ".ts", ".tsx", ".jsx"],
-  },
+    extensions: ['.js', '.ts', '.tsx', '.jsx']
+  }
 };
