@@ -1,6 +1,6 @@
 {
   "name": "react-app-starter",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Boilerplate project to get started with react",
   "main": "index.js",
   "scripts": {
