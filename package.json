@@ -1,6 +1,6 @@
 {
   "name": "react-app-starter",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Boilerplate project to get started with react",
   "main": "index.js",
   "scripts": {
@@ -32,6 +32,7 @@
     "@babel/preset-env": "^7.16.8",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@types/react": "^17.0.26",
     "@types/react-dom": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^5.50.0",

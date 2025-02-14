@@ -1,4 +1,5 @@
 import './app.css';
+
 import webpackIcon from './assets/webpack-icon.png';
 
 const App = () => {
